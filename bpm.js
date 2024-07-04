@@ -33,7 +33,22 @@ function _saveData(data, info) {
     newData.area = selectArea.options[selectArea.selectedIndex].value;
     newData.dataEntrada = document.querySelector("#dataEntrada").value;
 
+
     // Aba 2
+    const dadosProprietarios = [];
+    let blocksProp = document.querySelectorAll('#box-proprietario');
+
+    blocksProp.forEach(function(block) {
+        const nomeProp = block.querySelector('#nomeProp').value;
+        const contatoProp = block.querySelector('#contatoProp').value;
+        const emailProp = block.querySelector('#emailProp').value;
+        
+        dadosProprietarios.push({nomeProp, contatoProp, emailProp});
+    })
+    
+    newData.props = dadosProprietarios;
+
+    // Aba 3
     newData.regArea = selectRegArea.options[selectRegArea.selectedIndex].value;
     newData.cepArea = document.querySelector("#cepArea").value;
     newData.cepEstado = document.querySelector("#cepEstado").value;

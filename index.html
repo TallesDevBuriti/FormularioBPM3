@@ -46,6 +46,40 @@
                 </div>
             </div>         
         </section>
+
+        <section class="row g-2 mt-4 border border-light rounded p-4">
+            <div id="box-dados-proprietarios">
+                <div class="d-flex flex-row justify-content-between align-items-center gap-4">
+                    <h5 class="text-success">DADOS DO(S) PROPRIETÁRIO(S)</h5>
+                    <button type="button" id="btn-add-new-line" class="btn btn-success">Nova linha</button>
+                </div>
+                <div id="box-proprietario" class="border rounded mt-3 p-3">
+                    <div class="d-flex justify-content-end mb-3">
+                        <button type="button" id="btn-close-tab" class="btn btn-light btn-sm">
+                            <img src="./src/img/icons/close_tab.svg" alt="Icone de fechar aba">
+                        </button>
+                    </div>
+                    <div class="row g-2">
+                        <div class="form-floating">
+                            <input type="text" id="nomeProp" class="form-control" placeholder="Preencha o nome do proprietário......" required>
+                            <label for="floatingInputGrid">Nome do Proprietário *</label>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                              <input type="tel" id="contatoProp" class="form-control" maxlength="15" placeholder="(00) 00000-0000" required>
+                              <label for="floatingInputGrid">Contato *</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                              <input type="email" id="emailProp" class="form-control" placeholder="abcdefgh@email.com" required>
+                              <label for="floatingInputGrid">E-mail *</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <section class="row g-2 mt-4 border border-light rounded p-4">
             <div>
