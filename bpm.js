@@ -20,12 +20,7 @@ function _init(data, info) {
             console.log(platformData);
         });
         info.getInfoFromProcessVariables().then(function(data) {
-            const regex = /\{[^}]*\}/g;
-            const parts = data.props.match(regex);
-
-
             console.log(data)
-            console.log(parts)
         })
     });
 }
