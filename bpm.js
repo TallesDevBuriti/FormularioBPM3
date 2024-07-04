@@ -14,6 +14,7 @@ function _init(data, info) {
         .getUserData()
         .then(function (user) {
             document.querySelector("#nomFun").setAttribute("value", user.fullname);
+            console.log(user);
         })
         .then(function () {
         info.getPlatformData().then(function (platformData) {
