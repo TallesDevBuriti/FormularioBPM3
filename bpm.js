@@ -25,8 +25,8 @@ function _init(data, info) {
 function _saveData(data, info) {
 
     let newData = {};
-    let selectArea = document.getElementById("#areaEmp");
-    let selectRegArea = document.getElementById("#regArea");
+    let selectArea = document.querySelector("#areaEmp").value;
+    let selectRegArea = document.querySelector("#regArea").value;
   
     // Aba 1
     newData.nomFun = document.querySelector("#nomFun").value;
