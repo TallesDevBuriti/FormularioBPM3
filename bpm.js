@@ -25,9 +25,9 @@ function _init(data, info) {
 function _saveData(data, info) {
 
     let newData = {};
-    let selectArea = document.querySelector("#areaEmp").value;
-    let selectRegArea = document.querySelector("#regArea").value;
-  
+    let selectArea = document.querySelector("#areaEmp");
+    let selectRegArea = document.querySelector("#regArea");
+
     // Aba 1
     newData.nomFun = document.querySelector("#nomFun").value;
     newData.area = selectArea.options[selectArea.selectedIndex].value;
@@ -38,7 +38,7 @@ function _saveData(data, info) {
     newData.cepArea = document.querySelector("#cepArea").value;
     newData.cepEstado = document.querySelector("#cepEstado").value;
     newData.municipio = document.querySelector("#municipio").value;
-    newData.areaHect = document.querySelector("#areaHect").value;
+    newData.areaHect = document.querySelector("#areaHectare").value;
     newData.areaMQ = document.querySelector("#areaMQ").value;
  
     console.log(newData);
