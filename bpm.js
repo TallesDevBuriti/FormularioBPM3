@@ -21,7 +21,7 @@ function _init(data, info) {
         });
         info.getInfoFromProcessVariables().then(function(data) {
             const regex = /\{[^}]*\}/g;
-            const parts = data.match(regex);
+            const parts = data.props.match(regex);
 
 
             console.log(data)
